@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 lucide.createIcons({ attrs: { 'stroke-width': 2 } });
 
@@ -108,6 +108,10 @@ if (!prefersReducedMotion.matches) {
     '.integral-img', '.integral-content',
     '.location-info', '.tag',
     '.footer-brand', '.footer-bottom',
+    '.photo-section figure',
+    '.mobile-photo',
+    '.program-card',
+    '.slide',
   ];
 
   const fadeEls = document.querySelectorAll(ANIMATE_SELECTORS.join(', '));
@@ -128,7 +132,7 @@ if (!prefersReducedMotion.matches) {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
   fadeEls.forEach(el => revealObserver.observe(el));
 }

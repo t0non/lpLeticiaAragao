@@ -5,7 +5,7 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <!--
-    ATENÃ‡ÃƒO: Substitua SEU-DOMINIO.COM.BR pelo domÃ­nio real de produÃ§Ã£o
+    ATENÇÃO: Substitua SEU-DOMINIO.COM.BR pelo domínio real de produção
     antes de publicar e enviar ao Google Search Console.
   -->
 
@@ -17,4 +17,3 @@
   </url>
 
 </urlset>
-
