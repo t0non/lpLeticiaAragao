@@ -1,0 +1,11 @@
+{
+  "name": "lp-emanoele-kaippert",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Preview local de landing page de geriatria",
+  "scripts": {
+    "dev": "node tools/serve.cjs",
+    "check": "node --check app.js",
+    "build": "node tools/build.cjs"
+  }
+}

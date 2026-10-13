@@ -1,0 +1,17 @@
+# robots.txt — Letícia Nogueira Aragão | Psicóloga
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Não bloquear CSS, JS ou imagens — necessários para renderização
+Allow: /assets/
+Allow: /styles.css
+Allow: /app.js
+
+# Arquivos de desenvolvimento e temporários
+Disallow: /tools/
+Disallow: /dist/
+Disallow: /.reference/
+
+Sitemap: https://SEU-DOMINIO.COM.BR/sitemap.xml

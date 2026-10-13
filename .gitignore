@@ -1,0 +1,5 @@
+.reference/
+dist/
+.preview-*.log
+node_modules/
+scratch_*.png
