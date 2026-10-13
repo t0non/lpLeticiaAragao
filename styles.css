@@ -246,7 +246,7 @@ dialog::backdrop { background: #1e1a1ed9; }
   .hero .cta { margin-top: 36px; }
   .mobile-photo { display: block; height: auto; width: 100%; aspect-ratio: 550 / 430; object-fit: cover; object-position: center bottom; margin-top: 15px; }
   .hero picture, .integral picture, .biography picture { display: block; overflow: hidden; width: 100%; }
-  .hero .mobile-photo { width: 80%; max-width: 320px; margin: 15px auto 0 -15px; aspect-ratio: 882 / 1402; object-fit: contain; }
+  .hero .mobile-photo { width: 85%; max-width: 340px; margin: -10px auto 0; aspect-ratio: 882 / 1402; object-fit: contain; object-position: center top; }
   .integral .mobile-photo { width: 130%; max-width: none; margin-left: -3%; margin-top: 25px; aspect-ratio: 1448 / 1086; object-fit: contain; }
   .biography .mobile-photo { width: 138%; max-width: none; margin-left: -9%; margin-top: 30px; aspect-ratio: 1448 / 1086; object-fit: contain; }
   .challenges { min-height: 0; padding-top: 45px; }
