@@ -109,9 +109,9 @@ if (!prefersReducedMotion.matches) {
     '.location-info', '.tag',
     '.footer-brand', '.footer-bottom',
     '.photo-section figure',
-    '.mobile-photo',
     '.program-card',
-    '.slide',
+    '.feature-carousel',
+    '.carousel',
   ];
 
   const fadeEls = document.querySelectorAll(ANIMATE_SELECTORS.join(', '));
