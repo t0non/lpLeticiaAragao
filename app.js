@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 
 lucide.createIcons({ attrs: { 'stroke-width': 2 } });
 
@@ -97,3 +97,38 @@ document.querySelectorAll('dialog').forEach(dialog => {
     if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
   });
 });
+
+/* Fade-up scroll animations */
+if (!prefersReducedMotion.matches) {
+  const ANIMATE_SELECTORS = [
+    '.hero h1', '.hero-description', '.hero .cta',
+    '.eyebrow', 'h2', '.section-intro',
+    '.service-card', '.testimonial-card', '.faq-item',
+    '.bio-content', '.bio-img',
+    '.integral-img', '.integral-content',
+    '.location-info', '.tag',
+    '.footer-brand', '.footer-bottom',
+  ];
+
+  const fadeEls = document.querySelectorAll(ANIMATE_SELECTORS.join(', '));
+
+  fadeEls.forEach(el => {
+    el.classList.add('reveal');
+    const siblings = el.parentElement
+      ? [...el.parentElement.children].filter(c => c.classList.contains('reveal'))
+      : [];
+    const idx = siblings.indexOf(el);
+    if (idx > 0) el.style.transitionDelay = idx * 90 + 'ms';
+  });
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal--visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  fadeEls.forEach(el => revealObserver.observe(el));
+}
