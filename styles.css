@@ -39,8 +39,8 @@ strong { font-weight: 700; }
 .eyebrow.location { margin-left: 0; margin-bottom: 35px; justify-content: flex-start; }
 .eyebrow.location::after { max-width: 330px; }
 .eyebrow.location svg { width: 17px; height: 17px; fill: currentColor; margin-right: 5px; }
-.cta { display: inline-flex; justify-content: center; align-items: center; gap: 13px; max-width: 100%; padding: 12px 28px; border: 0; border-radius: 100px; background: linear-gradient(90deg, var(--gold-dark), var(--gold)); box-shadow: 0 17px 39px #a4805080; color: #fff; font-size: 24px; font-weight: 700; line-height: 28px; text-align: center; transition: transform .2s, box-shadow .2s, background .2s; }
-.cta:hover { background: var(--gold-dark); transform: translateY(-2px); box-shadow: 0 15px 25px #a4805060; }
+.cta { display: inline-flex; justify-content: center; align-items: center; gap: 13px; max-width: 100%; padding: 12px 28px; border: 0; border-radius: 100px; background: linear-gradient(90deg, var(--gold-dark), var(--gold)); color: #fff; font-size: 24px; font-weight: 700; line-height: 28px; text-align: center; transition: transform .2s, background .2s; }
+.cta:hover { background: var(--gold-dark); transform: translateY(-2px); }
 .cta svg { width: 24px; height: 24px; }
 .section-intro { margin-top: 30px; }
 .photo-section { background-position: center; background-repeat: no-repeat; background-size: cover; }
