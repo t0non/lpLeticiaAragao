@@ -167,7 +167,7 @@ strong { font-weight: 700; }
 .footer-brand > span { font-size: 16px; }
 .footer-brand p { font-size: 18px; }
 .footer-bottom > a { font-size: 14px; }
-.footer-logo { width: 140px; height: auto; max-width: 100%; margin: 0 auto 20px; }
+.footer-logo { width: 140px; height: auto; max-width: 100%; margin: 0 auto 20px; filter: brightness(0) invert(1); }
 .footer-bottom { border-top: 1px solid #ffffff70; padding-top: 25px; display: flex; justify-content: space-between; align-items: center; gap: 25px; }
 .footer-bottom p { font-size: 12px; }
 .footer-bottom p span { margin-inline: 6px; }
@@ -308,7 +308,7 @@ dialog::backdrop { background: #1e1a1ed9; }
   .location-info address { font-size: 16px; }
   .location-info .cta { font-size: 17px; padding: 13px 18px; }
   .footer { padding-block: 45px; }
-  .footer-logo { width: 110px; height: auto; margin-bottom: 30px; }
+  .footer-logo { width: 110px; height: auto; margin-bottom: 30px; filter: brightness(0) invert(1); }
   .footer-bottom { flex-direction: column; text-align: center; gap: 25px; }
   .footer-bottom p { font-size: 10px; }
   .footer-bottom img { width: 220px; height: auto; }
