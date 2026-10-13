@@ -1,8 +1,8 @@
 {
-  "name": "lp-emanoele-kaippert",
+  "name": "lp-leticia-aragao",
   "version": "1.0.0",
   "private": true,
-  "description": "Preview local de landing page de geriatria",
+  "description": "Landing page profissional Letícia Nogueira Aragão - Psicóloga",
   "scripts": {
     "dev": "node tools/serve.cjs",
     "check": "node --check app.js",

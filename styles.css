@@ -167,7 +167,7 @@ strong { font-weight: 700; }
 .footer-brand > span { font-size: 16px; }
 .footer-brand p { font-size: 18px; }
 .footer-bottom > a { font-size: 14px; }
-.footer-logo { margin: 0 auto 20px; }
+.footer-logo { width: 140px; height: auto; max-width: 100%; margin: 0 auto 20px; }
 .footer-bottom { border-top: 1px solid #ffffff70; padding-top: 25px; display: flex; justify-content: space-between; align-items: center; gap: 25px; }
 .footer-bottom p { font-size: 12px; }
 .footer-bottom p span { margin-inline: 6px; }
