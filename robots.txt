@@ -1,4 +1,4 @@
-﻿# robots.txt — Letícia Nogueira Aragão | Psicóloga
+# robots.txt — Letícia Aragão | Psicóloga
 # https://www.robotstxt.org/robotstxt.html
 
 User-agent: *

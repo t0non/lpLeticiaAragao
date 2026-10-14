@@ -2,7 +2,7 @@
   "name": "lp-leticia-aragao",
   "version": "1.0.0",
   "private": true,
-  "description": "Landing page profissional Letícia Nogueira Aragão - Psicóloga",
+  "description": "Landing page profissional Letícia Aragão - Psicóloga",
   "scripts": {
     "dev": "node tools/serve.cjs",
     "check": "node --check app.js",
