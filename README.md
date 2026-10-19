@@ -1,6 +1,6 @@
-# Letícia Nogueira Aragão
+# Letícia Aragão
 
-Landing page da psicóloga Letícia Nogueira Aragão, CRP 04/26390, com atendimento presencial em Belo Horizonte e on-line. Conteúdo baseado na apresentação profissional fornecida pelo usuário.
+Landing page da psicóloga Letícia Aragão, CRP 04/26390, com atendimento presencial em Belo Horizonte e on-line. Conteúdo baseado na apresentação profissional fornecida pelo usuário.
 
 ## Executar
 

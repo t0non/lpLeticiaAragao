@@ -13,6 +13,12 @@ const assert = require('node:assert/strict');
   assert.match(await page.title(), /Letícia Aragão/);
   assert.doesNotMatch(await page.content(), /Caciquinho|Cláudia|geriatria|CRM MG|RQE|The Clinic|Clínica Sentir|553184210412|5531983205381|FOTO-7-D|FOTO-3-550/iu);
   assert.match(await page.locator('body').innerText(), /CRP 04\/26390/);
+  assert.equal(await page.locator('main > section').nth(1).getAttribute('id'), 'curriculo');
+  assert.match(await page.locator('#hero-title').innerText(), /Letícia Aragão/);
+  for (const qualification of ['Cognitivo-Comportamental', 'Neuropsicologia', 'ABA', 'Criminal e Forense', 'Equoterapia', 'psicotécnicas']) {
+    assert.ok((await page.locator('#curriculo').innerText()).includes(qualification));
+  }
+  assert.equal(await page.locator('.review--featured').count(), 0);
 
   const carousel = page.locator('.feature-carousel');
   await carousel.locator('[data-step="1"]').click();
