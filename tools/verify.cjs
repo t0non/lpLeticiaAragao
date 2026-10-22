@@ -58,7 +58,7 @@ const assert = require('node:assert/strict');
         overflowElements:[...document.querySelectorAll('h1,h2,h3,.cta,.outline-card,.location-panel')].filter(el=>!el.closest('.slides')&&(rect(el).right>innerWidth+1||rect(el).left< -1)).map(el=>({tag:el.tagName,text:el.textContent.slice(0,50)})),
         clippedText:[...document.querySelectorAll('h1,h2,h3,.cta')].filter(el=>el.scrollWidth>el.clientWidth+2).map(el=>el.textContent.slice(0,50)),
         fontsLoaded:document.fonts.check('18px Poppins'),
-        contactLinks:[...document.querySelectorAll('[data-contact]')].every(a=>{const url=new URL(a.href);return url.searchParams.get('phone')==='5532988042418'&&url.searchParams.get('text')?.includes('Letícia')&&a.target==='_blank';})
+        contactLinks:[...document.querySelectorAll('[data-contact]')].every(a=>{const url=new URL(a.href);return a.tagName==='A'&&url.origin==='https://wa.me'&&url.pathname==='/5532988042418'&&url.searchParams.get('text')==='Olá, Letícia! Gostaria de informações sobre o atendimento psicológico.'&&a.target==='_blank';})
       };
     });
     reports.push(report);

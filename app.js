@@ -3,15 +3,6 @@
 lucide.createIcons({ attrs: { 'stroke-width': 2 } });
 
 const prefersReducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-const contactMessage = 'Olá, Letícia! Gostaria de informações sobre o atendimento psicológico.';
-document.querySelectorAll('[data-contact]').forEach(link => {
-  const url = new URL(link.href);
-  url.searchParams.set('phone', '5532988042418');
-  url.searchParams.set('text', contactMessage);
-  link.href = url.href;
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-});
 
 document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const track = carousel.querySelector('.slides');
