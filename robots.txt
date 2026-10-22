@@ -14,4 +14,4 @@ Disallow: /tools/
 Disallow: /dist/
 Disallow: /.reference/
 
-Sitemap: https://psicologaleticiaaragao.com.br/sitemap.xml
+Sitemap: https://leticiaaragao.com.br/sitemap.xml

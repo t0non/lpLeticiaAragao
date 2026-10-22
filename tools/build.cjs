@@ -8,7 +8,7 @@ const path = require('node:path');
   for(const file of ['index.html','styles.css','app.js','assets','robots.txt','sitemap.xml','llms.txt']) {
     const src = path.join(root,file);
     const dst = path.join(out,file);
-    try { await fs.cp(src,dst,{recursive:true}); } catch(e) { if(e.code!=='ENOENT') throw e; }
+    await fs.cp(src,dst,{recursive:true});
   }
   console.log('Static site built in dist/');
 })().catch(error=>{console.error(error);process.exitCode=1});
